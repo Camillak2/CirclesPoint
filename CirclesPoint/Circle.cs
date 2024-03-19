@@ -32,7 +32,17 @@ namespace CirclesPoint
                 }
             }
 
-            //byte result = PointIn
+            return 0;
+        }
+
+        public byte PointInOuterCircle(double x, double y)
+        {
+            if (Math.Pow(x, 2) + Math.Pow(y, 2) <= Math.Pow(R, 2) && Math.Pow(x, 2) + Math.Pow(y, 2) >= Math.Pow(R, 2) && (y <= 0 && x >= 0))
+            {
+                return 2;
+            }
+
+            return 0;
         }
     }
 }
