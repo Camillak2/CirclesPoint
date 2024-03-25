@@ -26,10 +26,15 @@ namespace CirclesPoint
         {
             if (Math.Pow(x, 2) + Math.Pow(y, 2) <= Math.Pow(R, 2))
             {
-                if ((x <= 0 && y >= 0) || ((x >= 0 && x <= 2*R) && (y <= 0 && y >= -R)))
+                if (x <= 0 && y >= 0)
                 {
                     return 1;
                 }
+            }
+
+            else if ((x >= 0 && x <= 2 * R) && (y <= 0 && y >= -R))
+            {
+                return 1;
             }
 
             return 0;
