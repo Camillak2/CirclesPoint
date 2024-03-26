@@ -303,7 +303,7 @@ namespace CheckInEntryPointInCirleTests
             double r = 4;
             double x = -1;
             double y = 0.1;
-            byte excepted = 1;
+            byte excepted = 0;
 
             // получение значения с помощью тестируемого метода
             byte actual = new Circle(r).CheckOnEntry(x, y);

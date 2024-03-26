@@ -24,7 +24,7 @@ namespace CirclesPoint
 
         public byte PointInInnerCircleOrRectangle(double x, double y)
         {
-            if (Math.Pow(x, 2) + Math.Pow(y, 2) <= Math.Pow(R, 2))
+            if (Math.Pow((x - (R * -1)), 2) + Math.Pow(y - R, 2) <= Math.Pow(R, 2))
             {
                 if (x <= 0 && y >= 0)
                 {
